@@ -1,8 +1,8 @@
-# ReactJS Quiz App Template
+# ReactJS Quiz Application
 
 <div align="center">
   <img src="./src/assets/icons/app-logo.svg" width="100" alt="React Quiz App Logo" />
-  <h1>🚀 React Quiz App Template</h1>
+  <h1>🚀 ReactJS Quiz Application</h1>
   <p>
     A modern, fully-featured quiz application template built with React, Vite, and Tailwind CSS. Perfect for developers looking to build and customize an interactive quiz platform with a premium, Apple-inspired UI.
   </p>
@@ -13,7 +13,7 @@
 
 <br />
 
-![React Quiz App Template Cover Image](./src/assets/images/appdemo.png)
+![React Quiz Application Cover Image](./src/assets/images/appdemo.png)
 
 
 ## ✨ Features
