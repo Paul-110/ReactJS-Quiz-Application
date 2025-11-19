@@ -6,14 +6,14 @@
   <p>
     A modern, fully-featured quiz application template built with React, Vite, and Tailwind CSS. Perfect for developers looking to build and customize an interactive quiz platform with a premium, Apple-inspired UI.
   </p>
-  <a href="https://react-quiz-app-template-self.vercel.app/" target="_blank">
+  <a href="https://quiz-app-11.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Live_Demo-View_Here-blue?style=for-the-badge&logo=vercel" alt="Live Demo" />
   </a>
 </div>
 
 <br />
 
-![React Quiz App Template Cover Image](./src/assets/images/ReactJS-Quiz-App-Template.jpg)
+![React Quiz App Template Cover Image](./src/assets/images/appdemo.png)
 
 
 ## ✨ Features
