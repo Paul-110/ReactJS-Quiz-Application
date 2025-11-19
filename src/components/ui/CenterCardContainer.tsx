@@ -1,6 +1,19 @@
-const CenterCardContainer = ({ children }: { children: React.ReactNode }) => {
+import cn from 'classnames'
+import { ReactNode } from 'react'
+
+interface CenterCardContainerProps {
+  children: React.ReactNode
+  className?: string
+}
+
+const CenterCardContainer = ({ children, className }: CenterCardContainerProps) => {
   return (
-    <div className="bg-card-bg flex min-h-[600px] min-w-full flex-col items-center justify-center rounded-sm px-3 pt-12 pb-14 md:min-w-[753px]">
+    <div
+      className={cn(
+        'bg-card-bg flex min-h-[600px] w-full flex-col items-center justify-center rounded-xl px-3 pt-12 pb-14 md:w-auto md:min-w-[753px]',
+        className,
+      )}
+    >
       {children}
     </div>
   )

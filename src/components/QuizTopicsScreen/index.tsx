@@ -43,7 +43,7 @@ const QuizTopicsScreen: React.FC = () => {
               )}
               disabled={disabled}
             >
-              {icon}
+              <span className="invert dark:invert-0">{icon}</span>
               <span className="ml-3 text-base font-medium md:text-lg md:font-semibold">
                 {title}
               </span>
