@@ -1,5 +1,3 @@
-# ReactJS Quiz Application
-
 <div align="center">
   <img src="./src/assets/icons/app-logo.svg" width="100" alt="React Quiz App Logo" />
   <h1>🚀 ReactJS Quiz Application</h1>
