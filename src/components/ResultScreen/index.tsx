@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { AppLogo, Refresh } from '../../config/icons'
-import { useQuiz } from '../../context/QuizContext' // Ensure ScreenTypes is imported if not already
+import { useQuiz } from '../../context/QuizContext'
+import { ScreenTypes } from '../../types'
 import { refreshPage } from '../../utils/helpers'
 import Button from '../ui/Button'
 import Flex from '../ui/Flex'

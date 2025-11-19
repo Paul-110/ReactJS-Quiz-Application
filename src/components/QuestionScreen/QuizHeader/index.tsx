@@ -22,7 +22,7 @@ const QuizHeader: FC<QuizHeaderProps> = ({ activeQuestion, totalQuestions, timer
   const progress = (timer / quizDetails.totalTime) * 100
 
   return (
-    <Flex spaceBetween itemsCenter>
+    <Flex spaceBetween>
       <div>
         <span className="text-theme-color text-[40px] font-medium sm:text-[45px] md:text-[50px] lg:text-[55px] xl:text-[60px]">
           {addLeadingZero(activeQuestion + 1)}
