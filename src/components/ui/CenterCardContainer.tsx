@@ -2,7 +2,7 @@ import cn from 'classnames'
 import { ReactNode } from 'react'
 
 interface CenterCardContainerProps {
-  children: React.ReactNode
+  children: ReactNode
   className?: string
 }
 
