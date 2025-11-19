@@ -1,0 +1,141 @@
+@import 'tailwindcss';
+@import './styles/fonts.module.css';
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  /* Light Theme (Apple Music Inspired) */
+  --color-primary-text: #1d1d1f;
+  --color-secondary-text: #6e6e73;
+  --color-disabled-card: #fbf4ecbc;
+  --color-select-topic-bg: #ffffff;
+  --color-theme-color: #fa2d55;
+  --color-disabled-button: #e7e8e9;
+  --color-outline-button-text: #fa2d55;
+  --color-button-text: #ffffff;
+  --color-card-bg: #ffffff;
+  --color-theme-text: #1d1d1f;
+  --color-border: #00000026;
+  --color-selected-answer: #ffd6ff;
+  --color-answer-bg: #ffffff;
+  --color-info-text: #ff783f;
+  --color-info-bg: #ffb23f26;
+  --color-success: #34c759;
+  --color-success-light: #e8f8e7;
+  --color-danger: #ff3b30;
+  --color-danger-light: #ffebee;
+
+  --shadow-card: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 8px 24px 0 rgba(0, 0, 0, 0.12);
+  --shadow-button: 0 4px 12px 0 rgba(250, 45, 85, 0.35);
+  --shadow-button-hover: 0 6px 16px 0 rgba(250, 45, 85, 0.45);
+
+  --animate-slide-off: slide-off 0.2s linear forwards;
+  --animate-slide-on: slide-on 0.2s linear forwards;
+
+  @keyframes slide-off {
+    0% {
+      transform: translateX(23px) scale(1) rotate(360deg);
+    }
+    50% {
+      transform: translateX(15px) scale(1.1);
+    }
+    100% {
+      transform: translateX(0px) scale(1) rotate(0deg);
+    }
+  }
+
+  @keyframes slide-on {
+    0% {
+      transform: translateX(0) scale(1) rotate(0deg);
+    }
+    50% {
+      transform: translateX(15px) scale(1.1);
+    }
+    100% {
+      transform: translateX(23px) scale(1) rotate(360deg);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes page-transition {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes stagger-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(10px);
+    }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+  }
+}
+
+@variant dark {
+  /* Dark Theme (Apple Music Inspired) */
+  --color-primary-text: #ffffff;
+  --color-secondary-text: #8e8e93;
+  --color-disabled-card: #00000080;
+  --color-select-topic-bg: #1c1c1e;
+  --color-theme-color: #fa2d55;
+  --color-disabled-button: #181214;
+  --color-outline-button-text: #ffffff;
+  --color-button-text: #ffffff;
+  --color-card-bg: #1c1c1e;
+  --color-theme-text: #ffffff;
+  --color-border: #ffffff26;
+  --color-selected-answer: #151113;
+  --color-answer-bg: #2c2c2e;
+  --color-info-text: #ff783f;
+  --color-info-bg: #ffb23f26;
+  --color-success: #30d158;
+  --color-success-light: #2c2c2e;
+  --color-danger: #ff453a;
+  --color-danger-light: #2c2c2e;
+
+  --shadow-card: 0 8px 24px 0 rgba(0, 0, 0, 0.25);
+  --shadow-card-hover: 0 10px 32px 0 rgba(0, 0, 0, 0.35);
+}
+
+@utility theme-gradient {
+  background: linear-gradient(to right, #800080, #ffc0cb);
+
+  @variant dark {
+    background: linear-gradient(to right, #fa2d55, #c72244);
+  }
+}
+
+@utility background {
+  background: #ffffff;
+
+  @variant dark {
+    background: #000000;
+  }
+}
+
+@utility button-background {
+  background: linear-gradient(90.04deg, #ff2d55 0.03%, #ff456a 99.96%);
+
+  @variant dark {
+    background: linear-gradient(90.04deg, #ff2d55 0.03%, #ff456a 99.96%);
+  }
+}
+
+body {
+  @apply text-theme-text background relative min-h-dvh overflow-x-hidden text-base transition-colors duration-500;
+
+  font-family: 'Anek Malayalam', sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+}
